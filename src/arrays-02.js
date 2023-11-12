@@ -39,7 +39,7 @@
  * @returns {string} - the character at the index
  */
 function findTheCharacterAtIndex(str, indx) {
-  // write your code here & return value
+  return str.charAt(indx);
 }
 
 /**
@@ -50,7 +50,7 @@ function findTheCharacterAtIndex(str, indx) {
  * @returns {string} - the sliced string
  */
 function sliceTheString(str, start, end) {
-  // write your code here & return value
+  return str.slice(start, end);
 }
 
 /**
@@ -61,6 +61,7 @@ function sliceTheString(str, start, end) {
  */
 function splitTheString(str, separator) {
   // write your code here & return value
+  return str.split(separator);
 }
 
 /**
@@ -70,6 +71,7 @@ function splitTheString(str, separator) {
  */
 function makeAllUpperCase(str) {
   // write your code here & return value
+  return str.toUpperCase();
 }
 
 /**
@@ -79,6 +81,7 @@ function makeAllUpperCase(str) {
  */
 function makeAllLowerCase(str) {
   // write your code here & return value
+  return str.toLowerCase();
 }
 
 /**
@@ -91,6 +94,14 @@ function makeAllLowerCase(str) {
  */
 function makeWordTitleCase(word) {
   // write your code here & return value
+  const splitword = word.toLowerCase().split(' ');
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < splitword.length; i++) {
+    // You do not need to check if i is larger than splitStr length, as your for does that for you
+    // Assign it back to the array
+    splitword[i] = splitword[i].charAt(0).toUpperCase() + splitword[i].substring(1);
+  }
+  return splitword.join(' ');
 }
 
 /**
@@ -103,6 +114,7 @@ function makeWordTitleCase(word) {
  */
 function replaceTheString(str, oldStr, newStr) {
   // write your code here & return value
+  return str.replace(oldStr, newStr);
 }
 
 /**
@@ -115,6 +127,8 @@ function replaceTheString(str, oldStr, newStr) {
  */
 function makeSentenceTitleCase(sentence) {
   // write your code here & return value
+  // eslint-disable-next-line no-shadow
+  return sentence.toLowerCase().split(' ').map((sentence) => (sentence.charAt(0).toUpperCase() + sentence.slice(1))).join(' ');
 }
 
 module.exports = {

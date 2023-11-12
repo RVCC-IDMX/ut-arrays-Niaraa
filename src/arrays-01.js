@@ -24,7 +24,7 @@
  * ? example: [1, 2, 3, 4, 5] => 1
  */
 function getFirstValue(arr) {
-  // write your code here & return value
+  return arr[0];
 }
 
 /**
@@ -36,7 +36,7 @@ function getFirstValue(arr) {
  * @returns {array} - array of the 4 elements
  */
 function makeArray(a, b, c, d) {
-  // write your code here & return value
+  return [a, b, c, d];
 }
 
 /**
@@ -47,7 +47,7 @@ function makeArray(a, b, c, d) {
  *
  */
 function createFirstFivePrimes() {
-  // write your code here & return value
+  return [2, 3, 5, 7, 11];
 }
 /**
  * Creates a new array with a number of elements
@@ -59,6 +59,12 @@ function createFirstFivePrimes() {
  */
 function createSizedArray(size) {
   // write your code here & return value
+  const arr = [];
+  // eslint-disable-next-line no-plusplus
+  for (let index = 0; index < size; index++) {
+    arr[index] = index;
+  }
+  return arr;
 }
 
 /**
@@ -69,6 +75,9 @@ function createSizedArray(size) {
  */
 function modifyArrayByAdding(arr) {
   // write your code here & return value
+  arr.push(1);
+  arr.unshift(1);
+  return arr;
 }
 
 /**
@@ -79,6 +88,9 @@ function modifyArrayByAdding(arr) {
  */
 function modifyArrayByDeleting(arr) {
   // write your code here & return value
+  arr.pop();
+  arr.shift();
+  return arr;
 }
 
 /**
@@ -90,6 +102,7 @@ function modifyArrayByDeleting(arr) {
  */
 function findElementAtIndex(arr, index) {
   // write your code here & return value
+  return arr[index];
 }
 
 /**
@@ -100,8 +113,15 @@ function findElementAtIndex(arr, index) {
  * ? example: [1, 2, 3, 4, 5], value = 6 => -1
  * ? hint: https://bit.ly/2ZyFaAj - Array Searching and Sorting Methods
  */
-function findElementByValue(arr, value) {
+function findElementByValue(array, value) {
   // write your code here & return value
+  // eslint-disable-next-line no-plusplus
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] === value) {
+      return index;
+    }
+  }
+  return -1;
 }
 
 /**
@@ -114,6 +134,8 @@ function findElementByValue(arr, value) {
  */
 function changeElementAtIndex(arr, index, value) {
   // write your code here & return value
+  arr[index] = value;
+  return arr;
 }
 
 /**
@@ -125,6 +147,7 @@ function changeElementAtIndex(arr, index, value) {
  */
 function makeStringFromArray(arr) {
   // write your code here & return value
+  return arr.join('');
 }
 
 /**
@@ -136,6 +159,8 @@ function makeStringFromArray(arr) {
  */
 function createShallowCopy(arr) {
   // write your code here & return value
+  const copy = [...arr];
+  return copy;
 }
 
 module.exports = {

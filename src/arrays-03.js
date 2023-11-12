@@ -17,7 +17,12 @@
  * ? must use the forEach() array method - https://youtu.be/GNXZpM-15Xg
  */
 function addUpArrayElements(arr) {
-  // write your code here & return value
+  const arr = [1, 2, 3, 4, 5];
+  let sum = 0;
+  arr.forEach(num => {
+    sum += num;
+  })
+
 }
 
 /**
@@ -28,7 +33,7 @@ function addUpArrayElements(arr) {
  * ? must use the map() array method - https://youtu.be/nO4fLugOX9k
  */
 function makeSquareNumbers(arr) {
-  // write your code here & return value
+
 }
 
 /**
@@ -42,7 +47,7 @@ function makeSquareNumbers(arr) {
  * ? must use the filter() array method - https://youtu.be/JY5HUDMudew
  */
 function filterForLargeWords(arr, length) {
-  // write your code here & return value
+
 }
 
 /**
@@ -53,7 +58,7 @@ function filterForLargeWords(arr, length) {
  * ? must use the find() array method - https://youtu.be/KCx0mQEC4Zw
  */
 function findTheFirstEvenNumber(arr) {
-  // write your code here & return value
+
 }
 
 /**

@@ -18,6 +18,7 @@
  */
 function getAbsoluteSum(nums) {
   // write your code here & return value
+
 }
 
 /**
@@ -28,7 +29,7 @@ function getAbsoluteSum(nums) {
  * ? hint: use the filter() array method - https://youtu.be/JY5HUDMudew
  */
 function removeStrings(arr) {
-  // write your code here & return value
+
 }
 
 /**
