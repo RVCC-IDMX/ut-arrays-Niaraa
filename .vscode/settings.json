@@ -40,5 +40,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "liveServer.settings.root": "/coverage"
+  "liveServer.settings.root": "/coverage",
+  "liveServer.settings.port": 5501
 }
